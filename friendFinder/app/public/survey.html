@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" 2>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
+        crossorigin="anonymous" 2>
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Friend Finder</title>
+    <style>body {
+            background-image: url("../images/blurredPeople.jpg");
+            background-color: #cccccc;
+            background-repeat: no-repeat;
+            background-size: 100%;
+            background-attachment: fixed;
+            font-size: 1.5rem;
+         }
+        
+         .jumbotron {
+             background-color: rgba(253, 251, 214, .7);
+         }
+        
+         .btn-primary {
+            color: #fff;
+            background-color: #ff016b;
+            border-color: #ff016b;
+        }
+        
+        .btn-secondary {
+            color: #fff;
+            background-color: #17a2b8;
+            border-color: #17a2b8;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+            <div class="jumbotron">
+                <h1 class="display-4">Survey Questions</h1>
+                <hr class="my-4">
+                <h2>About You</h2>
+                <h4>Name Required</h4>
+                <input class="form-control" type="text" placeholder="Default input">
+                <br>
+                <h4>Link to Photo Image(required)</h4>
+                <input class="form-control" type="text" placeholder="Default input">
+                <p>Answer a few basic questions. Then find the friend with the greatest compatibility!</p>
+                <br>
+
+                <h2>Question 1</h2>
+                <p>Your mind is always buzzing with unexplored ideas and plans</p>
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false">
+                        Dropdown
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                        <button class="dropdown-item" type="button">1 (Strongly Disagree)</button>
+                        <button class="dropdown-item" type="button">2</button>
+                        <button class="dropdown-item" type="button">3</button>
+                        <button class="dropdown-item" type="button">4</button>
+                        <button class="dropdown-item" type="button">5 (Strongly Agree)</button>
+                    </div>
+                </div>
+                <br>
+                <h2>Question 2</h2>
+                <p>Generally speaking, you rely more on your experience than your imagination.</p>
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false">
+                        Dropdown
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                        <button class="dropdown-item" type="button">1 (Strongly Disagree)</button>
+                        <button class="dropdown-item" type="button">2</button>
+                        <button class="dropdown-item" type="button">3</button>
+                        <button class="dropdown-item" type="button">4</button>
+                        <button class="dropdown-item" type="button">5 (Strongly Agree)</button>
+                    </div>
+                </div>
+                <br>
+                <h2>Question 3</h2>
+                <p>You find it easy to stay relaxed and focused even when there is some pressure.</p>
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false">
+                        Dropdown
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                        <button class="dropdown-item" type="button">1 (Strongly Disagree)</button>
+                        <button class="dropdown-item" type="button">2</button>
+                        <button class="dropdown-item" type="button">3</button>
+                        <button class="dropdown-item" type="button">4</button>
+                        <button class="dropdown-item" type="button">5 (Strongly Agree)</button>
+                    </div>
+                </div>
+                <br>
+                <h2>Question 4</h2>
+                <p>You rarely do something just out of sheer curiosity.</p>
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false">
+                        Dropdown
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                        <button class="dropdown-item" type="button">1 (Strongly Disagree)</button>
+                        <button class="dropdown-item" type="button">2</button>
+                        <button class="dropdown-item" type="button">3</button>
+                        <button class="dropdown-item" type="button">4</button>
+                        <button class="dropdown-item" type="button">5 (Strongly Agree)</button>
+                    </div>
+                </div>
+                <br>
+                <h2>Question 5</h2>
+                <p>People can rarely upset you.</p>
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false">
+                        Dropdown
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                        <button class="dropdown-item" type="button">1 (Strongly Disagree)</button>
+                        <button class="dropdown-item" type="button">2</button>
+                        <button class="dropdown-item" type="button">3</button>
+                        <button class="dropdown-item" type="button">4</button>
+                        <button class="dropdown-item" type="button">5 (Strongly Agree)</button>
+                    </div>
+                </div>
+                <br>
+                <h2>Question 6</h2>
+                <p>It is often difficult for you to relate to other people’s feelings.</p>
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false">
+                        Dropdown
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                        <button class="dropdown-item" type="button">1 (Strongly Disagree)</button>
+                        <button class="dropdown-item" type="button">2</button>
+                        <button class="dropdown-item" type="button">3</button>
+                        <button class="dropdown-item" type="button">4</button>
+                        <button class="dropdown-item" type="button">5 (Strongly Agree)</button>
+                    </div>
+                </div>
+                <br>
+                <h2>Question 7</h2>
+                <p>In a discussion, truth should be more important than people’s sensitivities.</p>
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false">
+                        Dropdown
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                        <button class="dropdown-item" type="button">1 (Strongly Disagree)</button>
+                        <button class="dropdown-item" type="button">2</button>
+                        <button class="dropdown-item" type="button">3</button>
+                        <button class="dropdown-item" type="button">4</button>
+                        <button class="dropdown-item" type="button">5 (Strongly Agree)</button>
+                    </div>
+                </div>
+                <br>
+                <h2>Question 8</h2>
+                <p>You rarely get carried away by fantasies and ideas.</p>
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false">
+                        Dropdown
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                        <button class="dropdown-item" type="button">1 (Strongly Disagree)</button>
+                        <button class="dropdown-item" type="button">2</button>
+                        <button class="dropdown-item" type="button">3</button>
+                        <button class="dropdown-item" type="button">4</button>
+                        <button class="dropdown-item" type="button">5 (Strongly Agree)</button>
+                    </div>
+                </div>
+                <br>
+                <h2>Question 9</h2>
+                <p>You think that everyone’s views should be respected regardless of whether they are supported by facts or
+                    not.</p>
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false">
+                        Dropdown
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                        <button class="dropdown-item" type="button">1 (Strongly Disagree)</button>
+                        <button class="dropdown-item" type="button">2</button>
+                        <button class="dropdown-item" type="button">3</button>
+                        <button class="dropdown-item" type="button">4</button>
+                        <button class="dropdown-item" type="button">5 (Strongly Agree)</button>
+                    </div>
+                </div>
+                <br>
+                <h2>Question 10</h2>
+                <p>You feel more energetic after spending time with a group of people.</p>
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false">
+                        Dropdown
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                        <button class="dropdown-item" type="button">1 (Strongly Disagree)</button>
+                        <button class="dropdown-item" type="button">2</button>
+                        <button class="dropdown-item" type="button">3</button>
+                        <button class="dropdown-item" type="button">4</button>
+                        <button class="dropdown-item" type="button">5 (Strongly Agree)</button>
+                    </div>
+                </div>
+                <br>
+                <a class="btn btn-primary btn-lg" href="survery.html" role="button">Submit</a>
+            </div>
+        </div>
+        <div class="col-md-2"></div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
