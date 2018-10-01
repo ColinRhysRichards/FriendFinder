@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="style.css">
     <title>Friend Finder</title>
     <style>body {
-            background-image: url("../images/blurredPeople.jpg");
+            background-image: url("images/blurredPeople.jpg");
             background-color: #cccccc;
             background-repeat: no-repeat;
             background-size: 100%;
@@ -47,11 +47,21 @@
                 <h1 class="display-4">Friend Finder</h1>
                 <hr class="my-4">
                 <p>Answer a few basic questions. Then find the friend with the greatest compatibility!</p>
-                <a class="btn btn-primary btn-lg" href="survey.html" role="button">Start Survey </a>
+                <a class="btn btn-primary btn-lg" href="survey" role="button">Start Survey </a>
             </div>
         </div>
         <div class="col-md-2"></div>
     </div>
 </body>
+
+<script type="text/javascript">
+    function getData(){
+        var currentURL = window.location.origin;
+        $.ajax({
+        url: currentURL + "/api/friends", 
+        method: "GET"
+        })
+    }
+</script>
 
 </html>
