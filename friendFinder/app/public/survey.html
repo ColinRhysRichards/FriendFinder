@@ -12,32 +12,6 @@
     <script src="https://code.jquery.com/jquery.js"></script>
     <link rel="stylesheet" href="style.css">
     <title>Friend Finder</title>
-    <style>
-        body {
-            background-image: url("../images/blurredPeople.jpg");
-            background-color: #cccccc;
-            background-repeat: no-repeat;
-            background-size: 100%;
-            background-attachment: fixed;
-            font-size: 1.5rem;
-        }
-
-        .jumbotron {
-            background-color: rgba(253, 251, 214, .7);
-        }
-
-        .btn-primary {
-            color: #fff;
-            background-color: #ff016b;
-            border-color: #ff016b;
-        }
-
-        .btn-secondary {
-            color: #fff;
-            background-color: #17a2b8;
-            border-color: #17a2b8;
-        }
-    </style>
 </head>
 
 <body>
@@ -55,7 +29,6 @@
                 <input class="form-control" type="text" placeholder="Default input" id="friend-photo">
                 <p>Answer a few basic questions. Then find the friend with the greatest compatibility!</p>
                 <br>
-
                 <h2>Question 1</h2>
                 <p>Generally speaking, you rely more on your experience than your imagination.</p>
                 <div class="dropdown">
@@ -68,12 +41,10 @@
                     </select>
                 </div>
                 <br>
-                <!-- </div> -->
                 <br>
                 <h2>Question 2</h2>
                 <p>Generally speaking, you rely more on your experience than your imagination.</p>
                 <div class="dropdown">
-                    
                     <select id="question2">
                         <option value="1" class="dropdown-item" type="option">1 (Strongly Disagree)</option>
                         <option value="2" class="dropdown-item" type="option">2</option>
@@ -86,198 +57,176 @@
                 <h2>Question 3</h2>
                 <p>You find it easy to stay relaxed and focused even when there is some pressure.</p>
                 <div class="dropdown">
-                    
                     <select id="question3">
-                            <option value="1" class="dropdown-item" type="option">1 (Strongly Disagree)</option>
-                            <option value="2" class="dropdown-item" type="option">2</option>
-                            <option value="3" class="dropdown-item" type="option">3</option>
-                            <option value="4" class="dropdown-item" type="option">4</option>
-                            <option value="5" class="dropdown-item" type="option">5 (Strongly Agree)</option>
-                        </select>
+                        <option value="1" class="dropdown-item" type="option">1 (Strongly Disagree)</option>
+                        <option value="2" class="dropdown-item" type="option">2</option>
+                        <option value="3" class="dropdown-item" type="option">3</option>
+                        <option value="4" class="dropdown-item" type="option">4</option>
+                        <option value="5" class="dropdown-item" type="option">5 (Strongly Agree)</option>
+                    </select>
                 </div>
                 <br>
                 <h2>Question 4</h2>
                 <p>You rarely do something just out of sheer curiosity.</p>
                 <div class="dropdown">
-                    
                     <select id="question4">
-                            <option value="1" class="dropdown-item" type="option">1 (Strongly Disagree)</option>
-                            <option value="2" class="dropdown-item" type="option">2</option>
-                            <option value="3" class="dropdown-item" type="option">3</option>
-                            <option value="4" class="dropdown-item" type="option">4</option>
-                            <option value="5" class="dropdown-item" type="option">5 (Strongly Agree)</option>
-                        </select>
+                        <option value="1" class="dropdown-item" type="option">1 (Strongly Disagree)</option>
+                        <option value="2" class="dropdown-item" type="option">2</option>
+                        <option value="3" class="dropdown-item" type="option">3</option>
+                        <option value="4" class="dropdown-item" type="option">4</option>
+                        <option value="5" class="dropdown-item" type="option">5 (Strongly Agree)</option>
+                    </select>
                 </div>
                 <br>
                 <h2>Question 5</h2>
                 <p>People can rarely upset you.</p>
                 <div class="dropdown">
-                    
                     <select id="question5">
-                            <option value="1" class="dropdown-item" type="option">1 (Strongly Disagree)</option>
-                            <option value="2" class="dropdown-item" type="option">2</option>
-                            <option value="3" class="dropdown-item" type="option">3</option>
-                            <option value="4" class="dropdown-item" type="option">4</option>
-                            <option value="5" class="dropdown-item" type="option">5 (Strongly Agree)</option>
-                        </select>
+                        <option value="1" class="dropdown-item" type="option">1 (Strongly Disagree)</option>
+                        <option value="2" class="dropdown-item" type="option">2</option>
+                        <option value="3" class="dropdown-item" type="option">3</option>
+                        <option value="4" class="dropdown-item" type="option">4</option>
+                        <option value="5" class="dropdown-item" type="option">5 (Strongly Agree)</option>
+                    </select>
                 </div>
                 <br>
                 <h2>Question 6</h2>
                 <p>It is often difficult for you to relate to other people’s feelings.</p>
                 <div class="dropdown">
-                    
                     <select id="question6">
-                            <option value="1" class="dropdown-item" type="option">1 (Strongly Disagree)</option>
-                            <option value="2" class="dropdown-item" type="option">2</option>
-                            <option value="3" class="dropdown-item" type="option">3</option>
-                            <option value="4" class="dropdown-item" type="option">4</option>
-                            <option value="5" class="dropdown-item" type="option">5 (Strongly Agree)</option>
-                        </select>
+                        <option value="1" class="dropdown-item" type="option">1 (Strongly Disagree)</option>
+                        <option value="2" class="dropdown-item" type="option">2</option>
+                        <option value="3" class="dropdown-item" type="option">3</option>
+                        <option value="4" class="dropdown-item" type="option">4</option>
+                        <option value="5" class="dropdown-item" type="option">5 (Strongly Agree)</option>
+                    </select>
                 </div>
                 <br>
                 <h2>Question 7</h2>
                 <p>In a discussion, truth should be more important than people’s sensitivities.</p>
                 <div class="dropdown">
-                    
                     <select id="question7">
-                            <option value="1" class="dropdown-item" type="option">1 (Strongly Disagree)</option>
-                            <option value="2" class="dropdown-item" type="option">2</option>
-                            <option value="3" class="dropdown-item" type="option">3</option>
-                            <option value="4" class="dropdown-item" type="option">4</option>
-                            <option value="5" class="dropdown-item" type="option">5 (Strongly Agree)</option>
-                        </select>
+                        <option value="1" class="dropdown-item" type="option">1 (Strongly Disagree)</option>
+                        <option value="2" class="dropdown-item" type="option">2</option>
+                        <option value="3" class="dropdown-item" type="option">3</option>
+                        <option value="4" class="dropdown-item" type="option">4</option>
+                        <option value="5" class="dropdown-item" type="option">5 (Strongly Agree)</option>
+                    </select>
                 </div>
                 <br>
                 <h2>Question 8</h2>
                 <p>You rarely get carried away by fantasies and ideas.</p>
                 <div class="dropdown">
-                    
                     <select id="question8">
-                            <option value="1" class="dropdown-item" type="option">1 (Strongly Disagree)</option>
-                            <option value="2" class="dropdown-item" type="option">2</option>
-                            <option value="3" class="dropdown-item" type="option">3</option>
-                            <option value="4" class="dropdown-item" type="option">4</option>
-                            <option value="5" class="dropdown-item" type="option">5 (Strongly Agree)</option>
-                        </select>
+                        <option value="1" class="dropdown-item" type="option">1 (Strongly Disagree)</option>
+                        <option value="2" class="dropdown-item" type="option">2</option>
+                        <option value="3" class="dropdown-item" type="option">3</option>
+                        <option value="4" class="dropdown-item" type="option">4</option>
+                        <option value="5" class="dropdown-item" type="option">5 (Strongly Agree)</option>
+                    </select>
                 </div>
                 <br>
                 <h2>Question 9</h2>
-                <p>You think that everyone’s views should be respected regardless of whether they are supported by facts or
-                    not.
+                <p>You think that everyone’s views should be respected regardless of whether they are supported by facts
+                    or not.
                 </p>
                 <div class="dropdown">
-                    
                     <select id="question9">
-                            <option value="1" class="dropdown-item" type="option">1 (Strongly Disagree)</option>
-                            <option value="2" class="dropdown-item" type="option">2</option>
-                            <option value="3" class="dropdown-item" type="option">3</option>
-                            <option value="4" class="dropdown-item" type="option">4</option>
-                            <option value="5" class="dropdown-item" type="option">5 (Strongly Agree)</option>
-                        </select>
+                        <option value="1" class="dropdown-item" type="option">1 (Strongly Disagree)</option>
+                        <option value="2" class="dropdown-item" type="option">2</option>
+                        <option value="3" class="dropdown-item" type="option">3</option>
+                        <option value="4" class="dropdown-item" type="option">4</option>
+                        <option value="5" class="dropdown-item" type="option">5 (Strongly Agree)</option>
+                    </select>
                 </div>
                 <br>
                 <h2>Question 10</h2>
                 <p>You feel more energetic after spending time with a group of people.</p>
                 <div class="dropdown">
-                    
                     <select id="question10">
-                            <option value="1" class="dropdown-item" type="option">1 (Strongly Disagree)</option>
-                            <option value="2" class="dropdown-item" type="option">2</option>
-                            <option value="3" class="dropdown-item" type="option">3</option>
-                            <option value="4" class="dropdown-item" type="option">4</option>
-                            <option value="5" class="dropdown-item" type="option">5 (Strongly Agree)</option>
-                        </select>
+                        <option value="1" class="dropdown-item" type="option">1 (Strongly Disagree)</option>
+                        <option value="2" class="dropdown-item" type="option">2</option>
+                        <option value="3" class="dropdown-item" type="option">3</option>
+                        <option value="4" class="dropdown-item" type="option">4</option>
+                        <option value="5" class="dropdown-item" type="option">5 (Strongly Agree)</option>
+                    </select>
                 </div>
                 <br>
                 <button id="submitButton" class="btn btn-primary btn-lg submit" role="button">Submit</button>
             </div>
             <div id="modal">
-		<div class="modal-content">
-			<h4> Your Closest Friend Match</h4>
-			<div class="divider"></div>
-			<h5 id="userMatch"></h5>
-			<img id="userMatchImage" class="materialboxed" width="650" src="">
-		</div>
-		<div class="modal-footer">
-			<a href="/survey" class="modal-action modal-close waves-effect waves-green btn-flat">Fill it Again yea?</a>
-		</div>
-	</div>
-        <!-- </div>
-      </div> -->
+                <div class="modal-content">
+                    <h4> Your Closest Friend Match</h4>
+                    <div class="divider"></div>
+                    <h5 id="userMatch"></h5>
+                    <img id="userMatchImage" class="materialboxed" width="650" src="">
+                </div>
+                <div class="modal-footer">
+                    <a href="/survey" class="modal-action modal-close waves-effect waves-green btn-flat">Fill out the form
+                        again</a>
+                </div>
+            </div>
         </div>
         <div class="col-md-2"></div>
-        
-    <!-- </div>
-          </div> -->
     </div>
-    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em"
-        crossorigin="anonymous"></script> -->
+    <script type="text/javascript">
+        //make sure all fields are field out 
+        $("#submitButton").on("click", function () {
+            event.preventDefault();
+            var validation = true
+            function validate() {
+                $(".required").each(function () {
+                    if (this.val === "")
+                        validation = false
 
+                })
+                $(".input-field").each(function () {
+                    if (this.val === "")
+                        validation = false
 
-        <script type= "text/javascript">
-            //make sure all fields are field out 
-            $("#submitButton").on("click", function() {
-              event.preventDefault();
-                    var validation = true
-                    function validate(){
-                        $(".required").each(function(){
-                            if(this.val === "")
-                            validation = false 
-                            
-                        })
-                        $(".input-field").each(function(){
-                            if(this.val === "")
-                            validation = false 
-                            
-                        })
-                        return validation
-                        
-                    }
-                    if (validate() == true) 
-                    {
-                  //create a variable to hold all user input information
-                        var newFriend = {
-                            name: $('#friend-name').val().trim(),
-                            picture: $('#friend-photo').val().trim(),
-                            scores: [
-                                $('#question1').val(),
-                                $('#question2').val(),
-                                $('#question3').val(),
-                                $('#question4').val(),
-                                $('#question5').val(),
-                                $('#question6').val(),
-                                $('#question7').val(),
-                                $('#question8').val(),
-                                $('#question9').val(),
-                                $('#question10').val(),
-                            ]
-                     }
-                     //grab current location 
-                      var currentURL = window.location.origin;
-                      
-                      $.ajax({
-                                type: "POST",
-                                url:currentURL+"/api/friends",
-                                data: newFriend,
-                                success: function(data){
-                                    console.log(data)
-                                    $("#userMatch").text(data.name);
-                                    $("#userMatchImage").attr("src", data.picture);
-                                    $("#modal").modal("toggle")
-                                },
-                                dataType: "json"
-                            });	 
+                })
+                return validation
+
+            }
+            if (validate() == true) {
+                //create a variable to hold all user input information
+                var newFriend = {
+                    name: $('#friend-name').val().trim(),
+                    picture: $('#friend-photo').val().trim(),
+                    scores: [
+                        $('#question1').val(),
+                        $('#question2').val(),
+                        $('#question3').val(),
+                        $('#question4').val(),
+                        $('#question5').val(),
+                        $('#question6').val(),
+                        $('#question7').val(),
+                        $('#question8').val(),
+                        $('#question9').val(),
+                        $('#question10').val(),
+                    ]
                 }
-                else{
-                    alert("Please fill out all fields before submitting!");
-                }            
-        });
-         </script>
-         </body>
-         </html>
-   
+                //grab current location 
+                var currentURL = window.location.origin;
 
+                $.ajax({
+                    type: "POST",
+                    url: currentURL + "/api/friends",
+                    data: newFriend,
+                    success: function (data) {
+                        console.log(data)
+                        $("#userMatch").text(data.name);
+                        $("#userMatchImage").attr("src", data.picture);
+                        $("#modal").modal("toggle")
+                    },
+                    dataType: "json"
+                });
+            }
+            else {
+                alert("Please fill out all fields before submitting!");
+            }
+        });
+    </script>
+</body>
+
+</html>
