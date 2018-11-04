@@ -5,7 +5,7 @@ var app = express();
 app.use(express.static('public'))
 app.use(express.static('images'))
 
-var PORT = process.env.PORT || 7777;
+var PORT = process.env.PORT || 3000;
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
