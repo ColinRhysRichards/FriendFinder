@@ -1,0 +1,24 @@
+body {
+    background-image: url("../images/blurredPeople.jpg");
+    background-color: #cccccc;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+    font-size: 1.5rem;
+ }
+
+ .jumbotron {
+     background-color: rgba(253, 251, 214, .7);
+ }
+
+ .btn-primary {
+    color: #fff;
+    background-color: #ff016b;
+    border-color: #ff016b;
+}
+
+.btn-secondary {
+    color: #fff;
+    background-color: #17a2b8;
+    border-color: #17a2b8;
+}
